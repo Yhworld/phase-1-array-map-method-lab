@@ -12,10 +12,7 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-const newTutorials = tutorials.map(letter => {
-  const words = letter.split(' ');
-  const wordsCapitalized = words.map(word => word[0].toUpperCase() + word.slice(1, word.length));
-  const finalTutorials = wordsCapitalized.join(' ');
+const newTutorials = tutorials.map(letter => {const words = letter.split(' ');const wordsCapitalized = words.map(word => word[0].toUpperCase() + word.slice(1, word.length));const finalTutorials = wordsCapitalized.join(' ');
   return finalTutorials;
 });
 return newTutorials;
